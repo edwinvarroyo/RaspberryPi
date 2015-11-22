@@ -11,6 +11,8 @@ GPIO.setup(led, GPIO.OUT)
 previous_state = False
 current_state = False
 
+contador=0
+
 while True:
     time.sleep(0.1)
     previous_state = current_state
@@ -22,5 +24,6 @@ while True:
 
 
     if current_state != previous_state:
+    	contador=contador+1;
         new_state = "HIGH" if current_state else "LOW"
-        print("GPIO pin %s is %s" % (sensor, new_state))
+        print("movimiento " + contador)
