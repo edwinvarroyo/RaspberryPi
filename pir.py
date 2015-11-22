@@ -15,7 +15,7 @@ while True:
     time.sleep(0.1)
     previous_state = current_state
     current_state = GPIO.input(sensor)
-    if GPIO.input(sensor) = 1:
+    if GPIO.input(sensor) == 1:
     	GPIO.output(led, True) ## Enciendo
     else:
         GPIO.output(led, False) ## Apago
