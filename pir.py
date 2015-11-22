@@ -26,4 +26,5 @@ while True:
     if current_state != previous_state:
     	contador=contador+1;
         new_state = "HIGH" if current_state else "LOW"
-        print("movimiento " contador)
+        print("movimiento ")
+        print(contador)
