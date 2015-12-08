@@ -12,7 +12,7 @@ from time import sleep
 # Initiate GPIO for pigpio
 pi = pigpio.pi()
 # Setup the sensor
-dht22 = DHT22.sensor(pi, 27) # use the actual GPIO pin name
+dht22 = DHT22.sensor(pi,4) # use the actual GPIO pin name
 dht22.trigger()
 
 # We want our sleep time to be above 2 seconds.
