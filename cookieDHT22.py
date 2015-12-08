@@ -44,7 +44,7 @@ while True:
     print("movimiento: " + cantador)
     if GPIO.input(sensor)==1:
     		GPIO.output(led, True)
-    		contador++
+    		contador=contador+1
     else:
     		GPIO.output(led, False)
     sleep(sleepTime)
