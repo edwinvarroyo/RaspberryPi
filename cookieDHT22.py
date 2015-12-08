@@ -41,7 +41,7 @@ while True:
     humidity, temperature = readDHT22()
     print("Humedad : " + humidity + "%")
     print("Temperatura: " + temperature + "C")
-    print("movimiento: " + cantador)
+    print("movimiento: " + contador)
     if GPIO.input(sensor)==1:
     		GPIO.output(led, True)
     		contador=contador+1
